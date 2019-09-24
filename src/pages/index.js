@@ -20,7 +20,7 @@ const IndexPage = () => (
       url="https://sites.google.com/site/aghosdghsdgkl/music.mp3"
       playStatus={Sound.status.PLAYING}
       volume={100}
-      ignoreMobileRestrictions
+      ignoreMobileRestrictions={false}
     />
   </Layout>
 );
