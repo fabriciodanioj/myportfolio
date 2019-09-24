@@ -10,18 +10,18 @@ import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <Layout>
+    <Sound
+      url="https://sites.google.com/site/aghosdghsdgkl/music.mp3"
+      playStatus={Sound.status.PLAYING}
+      volume={100}
+      ignoreMobileRestrictions
+    />
     <Header />
     <Landing />
     <About />
     <Projects />
     <Writing />
     <Footer />
-    <Sound
-      url="https://sites.google.com/site/aghosdghsdgkl/music.mp3"
-      playStatus={Sound.status.PLAYING}
-      volume={100}
-      ignoreMobileRestrictions={false}
-    />
   </Layout>
 );
 
