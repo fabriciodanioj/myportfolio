@@ -1,4 +1,5 @@
 import React from 'react';
+import Sound from 'react-sound';
 import Layout from '../components/Layout';
 import Landing from '../sections/Landing';
 import About from '../sections/About';
@@ -15,7 +16,13 @@ const IndexPage = () => (
     <Projects />
     <Writing />
     <Footer />
+    <Sound
+      url="https://sites.google.com/site/aghosdghsdgkl/music.mp3"
+      playStatus={Sound.status.PLAYING}
+      volume={100}
+    />
   </Layout>
 );
+
 
 export default IndexPage;
